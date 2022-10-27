@@ -1,0 +1,184 @@
+/* Box sizing rules */
+@import url("https://fonts.goggleapis.com/css2?family=Poppins:wght@400&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, wich suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* a elements taht don't hace a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherits fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+*,
+*::before,
+*::after {
+  -webkit-animation-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+  -webkit-animation-iteration-count: 1 !important;
+          animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  background-color: rgb(219, 217, 217);
+}
+
+.card {
+  width: 250px;
+  height: 120px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.card img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.card__deleteBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  color: #777575;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.card__deleteBtn:hover {
+  transform: scale(1.2);
+}
+.card__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+}
+.card__top p {
+  color: #343434;
+  font-weight: bold;
+}
+.card__bottom {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card__bottom__btn {
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 65px;
+  height: 25px;
+  font-size: 0.8em;
+  transition: 0.2s ease-in;
+}
+.card__bottom__btn:hover {
+  transform: scale(1.1);
+}
+.card__bottom__btn--finish {
+  background-color: rgb(135, 117, 216);
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.form__input {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.form__btn {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(80, 231, 135);
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.form__btn:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=main.css.map */

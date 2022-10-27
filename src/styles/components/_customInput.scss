@@ -1,0 +1,25 @@
+.form {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    &__input {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+
+    &__btn {
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(80, 231, 135);
+        color: #fff;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+        transition: .2s ease-in;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.card {
+    width: 250px;
+    height: 120px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    img {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    &__deleteBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: transparent;
+        border: none;
+        color: #777575;
+        font-size: .8em;
+        cursor: pointer;
+        transition: .2s ease-in;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 50%;
+
+        p {
+            color: #343434;
+            font-weight: bold;
+        }
+    }
+
+    &__bottom {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__btn {
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            width: 65px;
+            height: 25px;
+            font-size: .8em;
+            transition: .2s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &--finish {
+                background-color: rgb(135, 117, 216);
+            }
+        }
+    }
+}
