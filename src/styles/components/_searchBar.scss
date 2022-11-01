@@ -1,0 +1,31 @@
+.searchBar {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #6f6f6f;
+  img {
+    width: 20px;
+    height: 20px;
+    padding: 0.2em;
+  }
+  input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0.2em;
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

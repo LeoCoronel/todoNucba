@@ -1,9 +1,10 @@
-@import
-    'vendors/reset';
+@import "vendors/reset";
 
-@import
-    'base/base';
+@import "base/animations", "base/base";
 
-@import
-    'components/card',
-    'components/customInput';
+@import "layout/navbar";
+
+@import "components/card", "components/cardList", "components/customInput",
+  "components/pokeCard", "components/searchBar";
+
+@import "pages/poke", "pages/todo";

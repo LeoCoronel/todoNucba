@@ -1,0 +1,50 @@
+.pokeCard {
+  width: 330px;
+  height: 400px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343434;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  .pokeCard__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pokeName {
+      font-size: 25px;
+      letter-spacing: 0.5em;
+    }
+  }
+  .pokeData {
+    width: 330px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    &__types {
+      &__images {
+        display: flex;
+        gap: 5px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+
+    .attack {
+      border: 1px solid orange;
+      border-width: 0 2px;
+      width: 110px;
+    }
+  }
+}

@@ -1,79 +1,92 @@
 .card {
-    width: 250px;
-    height: 120px;
-    border: 1px solid red;
+  width: 250px;
+  height: 120px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &__top {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+    height: 15%;
+    width: 100%;
+    padding: 0 0.2em;
     img {
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        top: 8px;
-        left: 8px;
+      width: 25px;
+      height: 25px;
     }
 
     &__deleteBtn {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        background-color: transparent;
-        border: none;
-        color: #777575;
-        font-size: .8em;
-        cursor: pointer;
-        transition: .2s ease-in;
+      background-color: transparent;
+      border: none;
+      color: #777575;
+      font-size: 0.8em;
+      cursor: pointer;
+      transition: 0.2s ease-in;
 
-        &:hover {
-            transform: scale(1.2);
-        }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+
+    .check {
+      margin-left: 5px;
     }
 
-    &__top {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        height: 50%;
-
-        p {
-            color: #343434;
-            font-weight: bold;
-        }
+    p {
+      color: #343434;
+      font-weight: bold;
+      margin-left: 10px;
     }
 
-    &__bottom {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-
-        &__btn {
-            border-radius: 10px;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-            width: 65px;
-            height: 25px;
-            font-size: .8em;
-            transition: .2s ease-in;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            &--finish {
-                background-color: rgb(135, 117, 216);
-            }
-        }
+    input[type="checkbox"] {
+      position: relative;
+      cursor: pointer;
     }
+    input[type="checkbox"]:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      border: 2px solid #555555;
+      border-radius: 3px;
+      background-color: white;
+    }
+    input[type="checkbox"]:checked:after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 10px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 2px;
+      left: 6px;
+    }
+  }
 }
